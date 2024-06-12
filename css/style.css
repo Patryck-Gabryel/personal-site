@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Danfo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Comfortaa:wght@300..700&family=Danfo&display=swap');
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.first-section{
+    background-color: #FFFF;
+}
+
+
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    justify-content: space-around;
+}
+
+a.botao-nav{
+    text-decoration: none;
+    font-family: "Bevan", serif;
+    font-weight: 400;
+    color: #F28705;
+    border: 0.2rem solid #012E40;
+    border-radius: 0px;
+    padding: 0.3rem;
+    margin: -1;
+    background-color: #012E40;
+    width: 7rem;
+    text-align: center;
+}
+
+a.botao-nav:hover{
+    background-color: #F28705;
+    color: #012E40;
+}
+
+a.botao-nav:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+
+.box-sobre{
+    display: flex;
+    justify-content: center;
+}
+
+.foto-sobre{
+    height: 400px;
+    width: 400px;
+    background-color: #012E40;
+    margin-top: 5rem;
+    border: 1px solid #012E40;
+    border-radius: 5%;
+    box-shadow: -2px 3px 4px 2px rgba(0, 0, 0, 0.5);
+}
+
+.sobre{
+    width: 22rem;
+    margin-top: 5rem;  
+    margin-left: 1rem; 
+    padding: 0;
+}
+
+.sobre-h1{
+    font-family: "Danfo", serif;
+    color: #F28705;
+    font-size: 4rem;
+    margin: 0;
+    margin-top: -10px;
+}
+
+.sobre-texto{
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 500;
+    line-height: 1.3rem;
+    margin-top: -0.4rem;
+}
+
+/* section 2 - Skills */
+
+.second-section{
+    border: 1px solid #012E40;
+    background-color: #012E40;
+    margin-top: 4%;
+    padding: 70px;
+    
+}
+
+h2{
+    font-family: "Danfo", serif;
+    color: #F28705;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill{
+    /*width: 138px;
+    height: 151px;*/
+    height: 70px;
+    background-color: #03CCC0;
+    border: 1px solid #03CCC0;
+    border-radius: 10%;
+    margin: 0px 40px ;
+    box-shadow: -2px 4px 4px 2px rgba(0, 0, 0, 0.5);
+    transition: width 1s ease, height 0.5s ease; /* Adiciona uma transição suave */
+
+}
+
+.skill:hover{
+    width: 138px;
+    height: 151px;
+}
+
+
+.text-skills{
+    display: none;
+}
+.skill:hover > p {
+    display: inline;
+}
+
+
+.soft-skills{
+    margin-top: 8%;
+}
+
+.soft-skills{
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
