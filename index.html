@@ -12,55 +12,59 @@
             <!-- <img src="" alt=""> -->
             <nav>
                 <a href="index.html" class="botao-nav">HOME</a>
-                <a href="#hard_skills" class="botao-nav">SKILLS</a>
+                <a href="#hard_skills" class="botao-nav" onclick="smoothScrollToSkills(event, 'hard_skills')">SKILLS</a>
                 <a href="#" class="botao-nav">PROJETOS</a>
             </nav>
         </header>
         <div class="box-sobre">
-            <div class="foto-sobre">
-                <img src="" alt="">
+            <div class="div-foto-sobre">
+                <!--<img src="" alt="foto-pessoal" class="foto-sobre"> -->
             </div>
             
             <div class="sobre">
                 <h1 class="sobre-h1">Sobre Mim</h1>
                 <p class="sobre-texto">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit a tempora illo explicabo ab illum quae mollitia ducimus nisi quaerat. Labore magni a vitae laborum incidunt, odit illo voluptate veniam?
+                    <b>Patryck Gabryel</b>
+                    <br><br>
+                    Estudo Análise Desevolvimento de Sistemas e trabalho hoje como <b>Adm. de Suporte TI.</b>
+                    <br><br>
+                    Conheço os fundamentos da construção de páginas WEB e procuro seguir carreira nessa área.
+
                 </p>
             </div>
         </div>
-        
     </section>
-    
+
     <section class="second-section">
         <article class="hard-skills">
             <h2 id="hard_skills">Hard Skills</h2>
             <div class="container">
                 <div class="skill">
-                    <img src="assets/icons8-html.svg" alt="HTML" style="height: 70px; float: right;">
+                    <img src="assets/icons8-html.svg" alt="HTML" style="float: right;" class="icon">
                     <p class="text-skills">
                         I know HTML5
                     </p>
                 </div>
                 <div class="skill">
-                    <img src="assets/icons8-css.svg" alt="CSS3" style="height: 70px; float: right;">
+                    <img src="assets/icons8-css.svg" alt="CSS3" style="float: right;" class="icon">
                     <p class="text-skills">
 
                     </p>
                 </div>
                 <div class="skill">
-                    <img src="assets/icons8-javascript.svg" alt="JavaScript" style="height: 70px; float: right;">
+                    <img src="assets/icons8-javascript.svg" alt="JavaScript" style="float: right;" class="icon">
                     <p class="text-skills">
 
                     </p>
                 </div>
                 <div class="skill">
-                    <img src="assets/icons8-git.svg" alt="Git-GitHub" style="height: 70px;  float: right;">
+                    <img src="assets/icons8-git.svg" alt="Git-GitHub" style="float: right;" class="icon">
                     <p class="text-skills">
 
                     </p>
                 </div>
                 <div class="skill">
-                    <img src="assets/icons8-github.svg" alt="Git-GitHub" style="height: 70px; float: right; clear: both;">
+                    <img src="assets/icons8-github.svg" alt="Git-GitHub" style="float: right; clear: both;" class="icon">
                     <p class="text-skills">
 
                     </p>
@@ -72,19 +76,19 @@
             <h2>Soft Skills</h2>
             <div class="container">
                 <div class="skill">
-                    <img src="assets/confiabilidade.png" alt="Confiabilidade" style="height: 70px;  float: right;">
+                    <img src="assets/confiabilidade.png" alt="Confiabilidade" style="float: right;" class="icon">
                     <p></p>
                 </div>
                 <div class="skill">
-                    <img src="assets/aperto-de-mao.png" alt="Comprometimento" style="height: 70px;  float: right;">
+                    <img src="assets/aperto-de-mao.png" alt="Comprometimento" style="float: right;" class="icon">
                     <p></p>
                 </div>
                 <div class="skill">
-                    <img src="assets/chuva-de-ideias.png" alt="Aprendizagem" style="height: 70px;  float: right;">
+                    <img src="assets/chuva-de-ideias.png" alt="Aprendizagem" style="float: right;" class="icon">
                     <p></p>
                 </div>
                 <div class="skill">
-                    <img src="assets/mapeamento-da-mente.png" alt="Conceituoso" style="height: 70px;  float: right;">
+                    <img src="assets/mapeamento-da-mente.png" alt="Conceituoso" style="float: right;" class="icon">
                     <p></p>
                 </div>
                 
@@ -103,5 +107,20 @@
         </div>
     </section>
     -->
+
 </body>
+<script>
+    function smoothScrollToSkills(event, hard_skills){
+        event.preventDefault();//Impede o comportamento padrão do link
+    
+        const targetSection = document.getElementById(hard_skills);
+        if (targetSection) {
+            const offsetTop = targetSection.offsetTop;
+            window.scrollTo({
+            top: offsetTop,
+            behavior:'smooth' //rolagem suave
+            })
+        }
+    }
+</script>
 </html>
